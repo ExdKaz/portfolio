@@ -1,0 +1,21 @@
+.aboutMe {
+  width: 75%;
+  margin: 0 auto;
+  padding: 7% 0;
+}
+
+.aboutMe-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.profile-icon .svg-inline--fa {
+  height: 1.5rem;
+  position: relative;
+  bottom: 0.16rem;
+}
+
+.aboutMe-body {
+  padding: 3% 0;
+}
