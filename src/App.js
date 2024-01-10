@@ -8,6 +8,8 @@ import {
   faGear,
   faLaptopCode,
   faAddressCard,
+  faArrowRight,
+  faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
     about: (
       <FontAwesomeIcon icon={faAddressCard} style={{ color: "#00bcd4" }} />
     ),
+    arrow: <FontAwesomeIcon icon={faArrowRight} style={{ color: "#00bcd4" }} />,
+    circle: <FontAwesomeIcon icon={faCircle} style={{ color: "#00bcd4" }} />,
   };
   return (
     <>

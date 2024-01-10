@@ -16,7 +16,11 @@ function Toolbar(props) {
               <ul className="navbar-nav">
                 <li className="nav-item u-l">
                   <span>{props.iconsList.profile}</span>
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="#about-book"
+                  >
                     About
                   </a>
                 </li>
@@ -39,7 +43,7 @@ function Toolbar(props) {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <button type="button" className="cv-button btn btin-light">
+                  <button type="button" className="cv-button btn ">
                     Download CV
                   </button>
                 </li>
