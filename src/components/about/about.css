@@ -1,7 +1,7 @@
 .aboutMe {
   width: 75%;
   margin: 0 auto;
-  padding: 7% 0;
+  padding: 5rem 0;
 }
 
 .aboutMe-title {
@@ -17,7 +17,7 @@
 }
 
 .aboutMe-body {
-  padding: 3% 0;
+  padding: 1.5rem 0;
 }
 
 .readMore-btn {
@@ -61,7 +61,7 @@ ul {
 }
 
 .education-work-container {
-  padding-top: 3%;
+  padding-top: 1.8rem;
   display: flex;
   gap: 5%;
 }

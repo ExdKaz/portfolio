@@ -1,0 +1,169 @@
+.skills-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#slider-track div:nth-child(1) {
+  background-image: url("../../../../portfolio/public/skills-logo/html-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+#slider-track div:nth-child(2) {
+  background-image: url("../../../../portfolio/public/skills-logo/css-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+#slider-track div:nth-child(3) {
+  background-image: url("../../../../portfolio/public/skills-logo/js.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+#slider-track div:nth-child(4) {
+  background-image: url("../../../../portfolio/public/skills-logo/angular.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+#slider-track div:nth-child(5) {
+  background-image: url("../../../../portfolio/public/skills-logo/physics.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+
+#slider-track div:nth-child(6) {
+  background-image: url("../../../../portfolio/public/skills-logo/material.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+
+#slider-track div:nth-child(7) {
+  background-image: url("../../../../portfolio/public/skills-logo/chartjs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+
+#slider-track div:nth-child(8) {
+  background-image: url("../../../../portfolio/public/skills-logo/bootstrap.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+
+#slider-track div:nth-child(9) {
+  background-image: url("../../../../portfolio/public/skills-logo/github.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
+  transition: 0.2s ease;
+}
+
+#slider-track div:hover {
+  transform: scale(1.2);
+}
+
+#carousel-container {
+  position: relative;
+  width: 25rem;
+  overflow: hidden;
+  margin: 1rem auto 1rem auto;
+  transform: translate3d(0, 0, 0);
+}
+
+#carousel-container::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(43, 48, 53, 1) 0%,
+    rgb(20, 19, 26, 0) 100%
+  );
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+#carousel-container::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgb(43, 48, 53, 1) 0%,
+    rgb(20, 19, 26, 0) 100%
+  );
+
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+#slider-track {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 200%;
+  animation: scroll 20s linear infinite;
+}
+
+#slider-track:hover {
+  animation-play-state: paused;
+}
+
+.skills-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.skills-icon .svg-inline--fa {
+  height: 1.5rem;
+  position: relative;
+  bottom: 0.16rem;
+}
+
+.skills-list {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-50%);
+  }
+}

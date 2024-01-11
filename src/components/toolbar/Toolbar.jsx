@@ -26,7 +26,7 @@ function Toolbar(props) {
                 </li>
                 <li className="nav-item u-l">
                   <span>{props.iconsList.skills}</span>
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#skills">
                     Skills
                   </a>
                 </li>

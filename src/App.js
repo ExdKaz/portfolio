@@ -11,6 +11,7 @@ import {
   faArrowRight,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Skills from "./components/skills/Skills";
 
 function App() {
   const icons = {
@@ -33,6 +34,7 @@ function App() {
       <Toolbar iconsList={icons} />
       <Intro />
       <About iconsList={icons} />
+      <Skills iconsList={icons} />
     </>
   );
 }
