@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-#slider-track div:nth-child(1) {
+/* #slider-track div:nth-child(1) {
   background-image: url("../../../../portfolio/public/skills-logo/html-5.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -11,85 +11,16 @@
   height: 3rem;
   width: 10rem;
   transition: 0.2s ease;
-}
-#slider-track div:nth-child(2) {
-  background-image: url("../../../../portfolio/public/skills-logo/css-3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-#slider-track div:nth-child(3) {
-  background-image: url("../../../../portfolio/public/skills-logo/js.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-#slider-track div:nth-child(4) {
-  background-image: url("../../../../portfolio/public/skills-logo/angular.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-#slider-track div:nth-child(5) {
-  background-image: url("../../../../portfolio/public/skills-logo/physics.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
+} */
 
-#slider-track div:nth-child(6) {
-  background-image: url("../../../../portfolio/public/skills-logo/material.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
+.images-div img {
+  height: 4.5rem;
+  width: 5rem;
+  object-fit: contain;
   transition: 0.2s ease;
+  padding: 0.5rem 0;
 }
-
-#slider-track div:nth-child(7) {
-  background-image: url("../../../../portfolio/public/skills-logo/chartjs.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-
-#slider-track div:nth-child(8) {
-  background-image: url("../../../../portfolio/public/skills-logo/bootstrap.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-
-#slider-track div:nth-child(9) {
-  background-image: url("../../../../portfolio/public/skills-logo/github.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 3rem;
-  width: 10rem;
-  transition: 0.2s ease;
-}
-
-#slider-track div:hover {
+.images-div img:hover {
   transform: scale(1.2);
 }
 
@@ -127,7 +58,7 @@
     rgb(20, 19, 26, 0) 100%
   );
 
-  right: 0;
+  right: -1px;
   top: 0;
   z-index: 99;
 }

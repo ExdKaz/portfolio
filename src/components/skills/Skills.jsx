@@ -18,15 +18,33 @@ function Skills(props) {
       </header>
       <div id="carousel-container">
         <div id="slider-track">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="images-div">
+            <img src="./skills-logo/html-5.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/css-3.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/js.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/angular.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/physics.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/material.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/chartjs.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/bootstrap.png" />
+          </div>
+          <div className="images-div">
+            <img src="./skills-logo/github.png" />
+          </div>
         </div>
       </div>
       <div className=" skills-list">
@@ -44,6 +62,7 @@ function Skills(props) {
           })}
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
