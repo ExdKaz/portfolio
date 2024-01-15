@@ -2,8 +2,22 @@ import "./contact.css";
 import { React, useState } from "react";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact(props) {
+  const notify = () => {
+    toast.success("Message Sent ", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -21,6 +35,7 @@ function Contact(props) {
   };
 
   const sendEmail = (event) => {
+    event.preventDefault();
     emailjs
       .sendForm("gmail", "portfolio", event.target, "RX7rbtF1GnQqra-_G")
       .then(
@@ -31,7 +46,6 @@ function Contact(props) {
           console.log(error.text);
         }
       );
-    event.target.reset();
   };
   return (
     <div className="contact-container">
@@ -91,12 +105,28 @@ function Contact(props) {
             name="message"
           />
           <div className="wid grid-col-span-2">
-            <button type="submit" className="cv-button btn send ">
+            <button
+              type="submit"
+              className="cv-button btn send "
+              onClick={notify}
+            >
               Send
             </button>
           </div>
         </form>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }
