@@ -73,13 +73,15 @@
 }
 
 .css-uhyr2s-MuiInputBase-root-MuiInput-root::after,
-.css-jcincl::after {
+.css-jcincl::after,
+.css-beyip3::after {
   border-bottom: 2px solid #00bcd4 !important;
 }
 
 .css-mqt2s5,
 .css-jcincl,
-.css-beyip3 {
+.css-beyip3,
+.css-348fk2.Mui-focused {
   color: #00bcd4 !important;
 }
 
