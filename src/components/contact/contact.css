@@ -72,8 +72,20 @@
   border-bottom: 2px solid #00bcd4 !important;
 }
 
-.css-uhyr2s-MuiInputBase-root-MuiInput-root::after {
+.css-uhyr2s-MuiInputBase-root-MuiInput-root::after,
+.css-jcincl::after {
   border-bottom: 2px solid #00bcd4 !important;
+}
+
+.css-mqt2s5,
+.css-jcincl,
+.css-beyip3 {
+  color: #00bcd4 !important;
+}
+
+.css-jcincl::before,
+.css-beyip3::before {
+  border-bottom: 1px solid #00bcd4 !important;
 }
 
 @media screen and (max-width: 680px) {
