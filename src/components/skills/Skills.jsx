@@ -19,31 +19,31 @@ function Skills(props) {
       <div id="carousel-container">
         <div id="slider-track">
           <div className="images-div">
-            <img src="./skills-logo/html-5.png" />
+            <img src="./skills-logo/html-5.png" alt="Html-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/css-3.png" />
+            <img src="./skills-logo/css-3.png" alt="Css-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/js.png" />
+            <img src="./skills-logo/js.png" alt="Js-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/angular.png" />
+            <img src="./skills-logo/angular.png" alt="Angular-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/physics.png" />
+            <img src="./skills-logo/physics.png" alt="React-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/material.png" />
+            <img src="./skills-logo/material.png" alt="Material-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/chartjs.png" />
+            <img src="./skills-logo/chartjs.png" alt="Chartjs-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/bootstrap.png" />
+            <img src="./skills-logo/bootstrap.png" alt="Bootstrap-logo" />
           </div>
           <div className="images-div">
-            <img src="./skills-logo/github.png" />
+            <img src="./skills-logo/github.png" alt="Github-logo" />
           </div>
         </div>
       </div>
