@@ -10,16 +10,16 @@ function About(props) {
 
     if (e.target.value === "read-more") {
       setIsDivExpanded(true);
-      if (screen.width <= 700) aboutMeDiv.style.height = "52.5rem";
-      else aboutMeDiv.style.height = "26.25rem";
+      if (screen.width <= 700) aboutMeDiv.style.height = "53rem";
+      else aboutMeDiv.style.height = "27rem";
     } else {
       setIsDivExpanded(false);
-      aboutMeDiv.style.height = "12.5rem";
+      aboutMeDiv.style.height = "11rem";
     }
   };
 
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="about-bm">
       <header className="aboutMe-title">
         <span className="profile-icon">{props.iconsList.about}</span>
         <span id="about-book">

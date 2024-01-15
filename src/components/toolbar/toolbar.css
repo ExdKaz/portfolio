@@ -1,5 +1,8 @@
 .toolbar {
-  padding: 0 4.2rem;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 .nav-brand {
   font-weight: 700;
@@ -24,7 +27,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.3rem;
   transition: 0.1s;
 }
@@ -70,12 +73,74 @@
 
 .cv-button {
   color: #00bcd4;
+  border: 1px solid #00bcd4;
 }
 
 .cv-button:hover {
   color: #ffffff;
   border: 1px solid #00bcd4;
   box-shadow: 0 0 0.6rem #00bcd4;
+}
+
+#nav-dropdown-list {
+  display: none;
+  position: absolute;
+}
+
+#nav-dropdown-btn {
+  display: none;
+}
+
+.c {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  #nav-dropdown-btn {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  #nav-dropdown-list {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    right: -0.5rem;
+    top: 3.7rem;
+    transition: height 0.7s ease;
+    box-shadow: 0 0 0.2rem #00bcd4;
+    background-color: #2b3035;
+  }
+
+  .responsive-nav {
+    gap: 0.5rem;
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .resp-button,
+  .c {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .btn {
+    --bs-btn-padding-x: 0.4rem;
+    --bs-btn-padding-y: 0.1rem;
+  }
+
+  .cv-icon {
+    display: flex;
+    font-size: small;
+    color: #00bcd4;
+    font-weight: bold;
+    align-items: baseline;
+    gap: 0.1rem;
+  }
 }
 
 @keyframes gradient {

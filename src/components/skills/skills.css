@@ -97,7 +97,7 @@
   position: relative;
   width: 25rem;
   overflow: hidden;
-  margin: 1rem auto 1rem auto;
+  margin: 3rem auto 1rem auto;
   transform: translate3d(0, 0, 0);
 }
 
@@ -160,6 +160,52 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 3rem;
+  padding: 1rem;
+}
+
+.skill-item {
+  color: #00bcd4;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-div {
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+  .skills-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #carousel-container {
+    position: relative;
+    width: 15rem;
+    overflow: hidden;
+    margin: 3rem auto 1rem auto;
+    transform: translate3d(0, 0, 0);
+  }
+
+  #slider-track {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 270%;
+    animation: scroll 20s linear infinite;
+  }
+
+  .skills-list {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
 }
 
 @keyframes scroll {

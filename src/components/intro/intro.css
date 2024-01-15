@@ -2,12 +2,17 @@
   display: grid;
   width: 75%;
   margin: 0 auto;
-  align-items: center;
   padding-top: 5rem;
   gap: 0.5rem;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.intro-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 h2,
@@ -80,6 +85,19 @@ h4 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .intro-container {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
   }
 }
 

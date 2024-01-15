@@ -10,8 +10,13 @@ import {
   faAddressCard,
   faArrowRight,
   faCircle,
+  faBars,
+  faXmark,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
+// import Projects from "./components/projects/Projects";
 
 function App() {
   const icons = {
@@ -28,6 +33,11 @@ function App() {
     ),
     arrow: <FontAwesomeIcon icon={faArrowRight} style={{ color: "#00bcd4" }} />,
     circle: <FontAwesomeIcon icon={faCircle} style={{ color: "#00bcd4" }} />,
+    list: <FontAwesomeIcon icon={faBars} style={{ color: "#00bcd4" }} />,
+    close: <FontAwesomeIcon icon={faXmark} style={{ color: "#00bcd4" }} />,
+    download: (
+      <FontAwesomeIcon icon={faDownload} style={{ color: "#00bcd4" }} />
+    ),
   };
   return (
     <>
@@ -35,6 +45,8 @@ function App() {
       <Intro />
       <About iconsList={icons} />
       <Skills iconsList={icons} />
+      {/* <Projects /> */}
+      <Contact iconsList={icons} />
     </>
   );
 }
