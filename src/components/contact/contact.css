@@ -90,6 +90,10 @@
   border-bottom: 1px solid #00bcd4 !important;
 }
 
+.toast-message {
+  background: #00bcd4;
+}
+
 @media screen and (max-width: 680px) {
   .contact-form {
     text-align: center;

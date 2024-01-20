@@ -2,6 +2,7 @@
 import React from "react";
 import { useRef, useState } from "react";
 import "./toolbar.css";
+import resume from "../../../src/AbhishekRana_Resume.pdf";
 
 function Toolbar(props) {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
@@ -19,6 +20,17 @@ function Toolbar(props) {
       ele.style.height = "10rem";
     }
   }
+
+  const downloadResume = () => {
+    const url = resume;
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Abhishek's Resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log(link.download, link.href, document.body, link);
+  };
 
   return (
     <>
@@ -59,7 +71,11 @@ function Toolbar(props) {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <button type="button" className="cv-button btn ">
+                  <button
+                    type="button"
+                    className="cv-button btn "
+                    onClick={downloadResume}
+                  >
                     Download CV
                   </button>
                 </li>
@@ -67,7 +83,7 @@ function Toolbar(props) {
 
               {/* navbar for smaller screen */}
               <div className="resp-button">
-                <div className="cv-icon c">
+                <div className="cv-icon c" onClick={downloadResume}>
                   <span>CV</span>
                   <span className="c">{props.iconsList.download}</span>
                 </div>

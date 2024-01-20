@@ -16,6 +16,7 @@ function Contact(props) {
       draggable: true,
       progress: undefined,
       theme: "light",
+      className: "toast-message",
     });
   };
   const [formData, setFormData] = useState({
@@ -65,6 +66,8 @@ function Contact(props) {
             value={formData.firstname}
             onChange={handleInputChange}
             name="firstname"
+            pattern={"[a-zA-Z]+"}
+            type="text"
           />
 
           <TextField
@@ -74,6 +77,7 @@ function Contact(props) {
             value={formData.lastname}
             onChange={handleInputChange}
             name="lastname"
+            pattern={"[a-zA-Z]+"}
           />
 
           <TextField
@@ -83,6 +87,7 @@ function Contact(props) {
             value={formData.email}
             onChange={handleInputChange}
             name="email"
+            type="email"
           />
 
           <TextField
@@ -92,6 +97,7 @@ function Contact(props) {
             value={formData.phone}
             onChange={handleInputChange}
             name="phone"
+            pattern={"[+]{0,1}[0-9]{10,12}"}
           />
 
           <TextField
