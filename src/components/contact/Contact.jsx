@@ -6,8 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Contact(props) {
-  const notify = () => {
-    toast.success("Message Sent ", {
+  const notify = (mssg) => {
+    toast.success(mssg, {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -37,16 +37,26 @@ function Contact(props) {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    emailjs
-      .sendForm("gmail", "portfolio", event.target, "RX7rbtF1GnQqra-_G")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (
+      formData.firstname.length ||
+      formData.lastname.length ||
+      formData.message.length === !0
+    ) {
+      emailjs
+        .sendForm("gmail", "portfolio", event.target, "RX7rbtF1GnQqra-_G")
+        .then(
+          (result) => {
+            console.log(result.text);
+            notify("Message Sent Successfully");
+          },
+          (error) => {
+            console.log(error.text);
+            notify("Error Sending Message..");
+          }
+        );
+    } else {
+      notify("Enter Required Fields");
+    }
   };
   return (
     <div className="contact-container">
@@ -68,6 +78,7 @@ function Contact(props) {
             name="firstname"
             pattern={"[a-zA-Z]+"}
             type="text"
+            required
           />
 
           <TextField
@@ -78,6 +89,7 @@ function Contact(props) {
             onChange={handleInputChange}
             name="lastname"
             pattern={"[a-zA-Z]+"}
+            required
           />
 
           <TextField
@@ -109,13 +121,10 @@ function Contact(props) {
             value={formData.message}
             onChange={handleInputChange}
             name="message"
+            required
           />
           <div className="wid grid-col-span-2">
-            <button
-              type="submit"
-              className="cv-button btn send "
-              onClick={notify}
-            >
+            <button type="submit" className="cv-button btn send ">
               Send
             </button>
           </div>
