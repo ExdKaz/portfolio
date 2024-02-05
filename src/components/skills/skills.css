@@ -109,6 +109,10 @@
   gap: 1rem;
 }
 
+.puff-in-center {
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
 @media screen and (max-width: 680px) {
   .skills-container {
     width: 85%;
@@ -142,5 +146,20 @@
 @keyframes scroll {
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+
+    filter: blur(0px);
+    opacity: 1;
   }
 }

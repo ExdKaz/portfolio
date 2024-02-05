@@ -37,11 +37,11 @@ function Toolbar(props) {
       <div className="toolbar shadow " data-bs-theme="dark">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="nav-brand" href="#">
+            <a className="nav-brand focus-in-expand" href="#">
               PORTFOLIO
             </a>
             <div className="nav-rignt-content">
-              <ul className="navbar-nav ">
+              <ul className="navbar-nav focus-in-expand">
                 <li className="nav-item u-l">
                   <span>{props.iconsList.profile}</span>
                   <a

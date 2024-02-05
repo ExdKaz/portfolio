@@ -22,7 +22,7 @@ function Intro() {
           skills towards the growth of the organization.
         </div>
       </div>
-      <div className="image"></div>
+      <div className="image scale-in-center"></div>
     </div>
   );
 }
