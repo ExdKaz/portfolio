@@ -25,7 +25,7 @@ function Toolbar(props) {
     const url = resume;
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Abhishek's_Resume.pdf"; // specify the filename
+    link.download = "AbhishekRana_Resume.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
