@@ -82,7 +82,7 @@ function Toolbar(props) {
               </ul>
 
               {/* navbar for smaller screen */}
-              <div className="resp-button">
+              <div className="resp-button focus-in-expand">
                 <div className="cv-icon c" onClick={downloadResume}>
                   <span>CV</span>
                   <span className="c">{props.iconsList.download}</span>
@@ -101,7 +101,7 @@ function Toolbar(props) {
                 </button>
               </div>
               <div id="nav-dropdown-list" ref={dropdownMenuRef}>
-                <ul className="navbar-nav responsive-nav">
+                <ul className="navbar-nav  responsive-nav">
                   <div className="padd">
                     <li className="nav-item u-l">
                       <span>{props.iconsList.profile}</span>

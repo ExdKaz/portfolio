@@ -11,7 +11,7 @@ function About(props) {
     if (e.target.value === "read-more") {
       setIsDivExpanded(true);
       if (screen.width <= 700) aboutMeDiv.style.height = "53rem";
-      else aboutMeDiv.style.height = "27rem";
+      else aboutMeDiv.style.height = "20rem";
     } else {
       setIsDivExpanded(false);
       aboutMeDiv.style.height = "11rem";
@@ -50,17 +50,6 @@ function About(props) {
             projects and gain practical skill-set. I was also a active participant in extra-curricular activities such\
             as Sports and Technical Events which helped me become a good team\
             worker and improved my soft skills part."
-          }
-        </p>
-        <br />
-
-        <p>
-          {
-            "At present, I am working in an MNC at the position of Full Stack\
-            Developer and I love my job. I love when my fingers run on keyboard\
-            to write code, I love when my brain is busy finding out the solution\
-            of the bug. Here, in my current company, I have learned a lot, met\
-            new people, networked with them and gained a lot of new skills."
           }
         </p>
       </div>
