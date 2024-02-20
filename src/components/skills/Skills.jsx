@@ -3,7 +3,7 @@ import "./skills.css";
 import Progress from "../progress/Progress";
 function Skills(props) {
   const skillList = [
-    { name: "Javascript", value: 75 },
+    { name: "Javascript", value: 70 },
     { name: "Angular", value: 75 },
     { name: "React", value: 70 },
     { name: "Github", value: 70 },

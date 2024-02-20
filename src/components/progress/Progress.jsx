@@ -1,28 +1,39 @@
 import React from "react";
 import "./progress.css";
+import { useState, useEffect } from "react";
 function Progress() {
-  // let circularProgress = document.querySelector(".circular-progress"),
-  //   progressValue = document.querySelector(".progress-value");
+  const [progress, setProgress] = useState(0);
+  const progressEndValue = 70;
+  const speed = 20;
 
-  // let progressStartValue = 0,
-  //   progressEndValue = 70,
-  //   speed = 100;
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((prevProgress) => {
+        const newProgress = prevProgress + 1;
+        if (newProgress === progressEndValue) {
+          clearInterval(timer);
+        }
+        return newProgress;
+      });
+    }, speed);
 
-  // let pro = setInterval(() => {
-  //   progressStartValue++;
-  //   progressValue.textContent = `${progressStartValue}%`;
-  //   circularProgress.style.background = `conic-gradient(#9c27b0, #00bcd4, ${
-  //     progressStartValue * 3.6
-  //   }deg, #ededed 0deg)`;
-  //   if (progressStartValue === progressEndValue) {
-  //     clearInterval(pro);
-  //   }
-  // }, speed);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div>
       <div className="skill">
-        <div className="circular-progress">
-          <span className="progress-value">75%</span>
+        <div
+          className="circular-progress"
+          style={{
+            background: `conic-gradient(#9c27b0, #00bcd4, ${
+              progress * 3.6
+            }deg, #ededed 0deg)`,
+          }}
+        >
+          <span className="progress-value">{progress}%</span>
         </div>
       </div>
     </div>
