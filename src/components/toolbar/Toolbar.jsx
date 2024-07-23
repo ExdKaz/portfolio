@@ -2,7 +2,7 @@
 import React from "react";
 import { useRef, useState } from "react";
 import "./toolbar.css";
-import resume from "../../../src/AbhishekRana_Resume.pdf";
+import resume from "../../../src/Abhishek_Rana_Resume.pdf";
 
 function Toolbar(props) {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
@@ -25,7 +25,7 @@ function Toolbar(props) {
     const url = resume;
     const link = document.createElement("a");
     link.href = url;
-    link.download = "AbhishekRana_Resume.pdf"; // specify the filename
+    link.download = "Abhishek_Rana_Resume.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
